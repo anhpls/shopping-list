@@ -5,3 +5,20 @@
   justify-content: center;
   align-self: center;
 }
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 5px 0;
+}
+
+.item-input {
+  width: 600px;
+}
+
+.shopping-cart {
+  max-height: 500px;
+  max-width: 500px;
+}
+

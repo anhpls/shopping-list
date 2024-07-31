@@ -18,10 +18,7 @@
   font-size: 1.3rem;
   border: none;
   color: rgb(42, 172, 42);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .header {
@@ -30,17 +27,13 @@
   justify-content: center;
   align-items: center;
 }
-.shopping-cart {
-  max-height: 500px;
-  max-width: 500px;
-}
 
 .header input {
   outline: none;
   border: none;
   box-shadow: 0 3px 2px -2px grey;
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 
 .header input:focus {
@@ -51,10 +44,9 @@
 
 .container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   outline: none;
   border: none;
-  box-shadow: 0 3px 2px -2px grey;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -66,10 +58,30 @@ ul{
 .remove-button {
   border: none;
   background-color: transparent;
-  color: hsl(0, 100%, 50%);
+  color: hsl(330, 100%, 50%);
   font-weight: bold;
   font-size: 1.5em;
   cursor: pointer;
+  transition: 0.5s ease;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  border-color: red;
+  background-color: hsla(283, 100%, 52%, 0.363);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto orange;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(74, 28, 28, 0.25);
+  padding: 10px;
 }
 
 li p {
@@ -77,5 +89,18 @@ li p {
   margin-left: 20px;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1;
+}
 
+input[type=checkbox] {
+  transform: scale(2);
+}
+
+li span {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-style: italic;
+}
 
